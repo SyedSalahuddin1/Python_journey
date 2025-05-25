@@ -36,7 +36,7 @@ while game_should_continue:
     guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
     print("\n" * 20)
-    print(logo)
+    print(logo5)
 
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_b["follower_count"]
