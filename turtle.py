@@ -36,7 +36,7 @@ def draw_spirograph(size_of_graph):
     # tim.setheading(random.choice(directions))
 
 
-draw_spirograph(6)
+draw_spirograph(5)
 
 # for _ in range(20):
 #     tim.forward(5)
