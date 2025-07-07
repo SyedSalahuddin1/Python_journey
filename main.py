@@ -1,51 +1,45 @@
-import random
+# student_dict = {
+#     "student": ["Angela", "James", "Lily"],
+#     "score": [56, 76, 98]
+# }
+#
+# # Looping through dictionaries:
+# for (key, value) in student_dict.items():
+#     # Access key and value
+#     pass
+#
+import pandas
+#
+# student_data_frame = pandas.DataFrame(student_dict)
+#
+# # Loop through rows of a data frame
+# for (index, row) in student_data_frame.iterrows():
+#     # Access index and row
+#     # Access row.student or row.score
+#     pass
 
-from hangman_words import word_list
-from hangman_arts import stages, logo
+# Keyword Method with iterrows()
+# {new_key:new_value for (index, row) in df.iterrows()}
 
-lives = 6
-print(logo)
+# TODO 1. Create a dictionary in this format:
+# {"A": "Alfa", "B": "Bravo"}
 
-chosen_word = random.choice(word_list)
-print(chosen_word)
+names = pandas.read_csv("nato_phonetic_alphabet.csv")
 
-placeholder = "_"
-word_length = len(chosen_word)
-for position in range(word_length):
-    placeholder += "_"
-print("Word to guess: " + placeholder)
+phonetic_dictionary = {row.letter: row.code for (index, row) in names.iterrows()}
+# names_dict = pandas.DataFrame(names)
+print(phonetic_dictionary)
 
-game_over = False
-correct_letters = []
-
-while not game_over:
-    print(f"****************************{lives}/6 LIVES LEFT****************************")
-    guess = input("Guess a word:").lower()
-
-    if guess in correct_letters:
-        print(f"You have already guessed {guess}.")
-
-    display = ""
-    for letter in chosen_word:
-        if letter == guess:
-            display += letter
-            correct_letters.append(guess)
-        elif letter in correct_letters:
-            display += letter
-        else:
-            display += "_"
-    print("Word to guess: " + display)
-
-    if guess not in chosen_word:
-        lives -= 1
-        print(f"You guessed {guess}, that's not in the word. You lose a life.")
-
-        if lives == 0:
-            game_over = True
-            print(f"***********************IT WAS {chosen_word}! YOU LOSE**********************")
-
-    if "_" not in display:
-        game_over = True
-        print("****************************YOU WIN****************************")
-
-    print(stages[lives])
+# for (index, row) in names_dict.iterrows():
+#     print(row)
+# Also can be done using function call and creating the function #try.except.else
+game_on = True
+# TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+while game_on:
+    try:
+        word = input("Enter a word: ").upper()
+        output_list = [phonetic_dictionary[letter] for letter in word]
+        print(output_list)
+        game_on = False
+    except KeyError:
+        print("Sorry only letters are accepted.")
