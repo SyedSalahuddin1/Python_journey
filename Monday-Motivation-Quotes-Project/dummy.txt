@@ -1,0 +1,19 @@
+ my_gmail = "salahcoder73@gmail.com"
+# password = "khzrnbxddkfikpdd"
+#
+#
+# with smtplib.SMTP("smtp.gmail.com") as connection:
+#     connection.starttls()
+#     connection.login(user=my_gmail, password=password)
+#     connection.sendmail(from_addr=my_gmail, to_addrs="syedsalahuddin384@gmail.com",
+#                         msg="Hello\n\nThis is Syed Salahuddin.\n"
+#                             "This is the third time I'm writing you today."
+#                             "\nHope You are doing well"
+#                         )
+#
+
+#
+# now = dt.datetime.now()
+# wd = now.weekday()
+# print(now)
+# print(wd)
