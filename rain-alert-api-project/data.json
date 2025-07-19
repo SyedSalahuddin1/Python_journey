@@ -1,0 +1,176 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 4,
+    "list": [
+        {
+            "dt": 1752678000,
+            "main": {
+                "temp": 298.46,
+                "feels_like": 299.19,
+                "temp_min": 298.46,
+                "temp_max": 298.46,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 911,
+                "humidity": 82,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 501,
+                    "main": "Rain",
+                    "description": "moderate rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 96
+            },
+            "wind": {
+                "speed": 3.65,
+                "deg": 294,
+                "gust": 6.53
+            },
+            "visibility": 6238,
+            "pop": 1,
+            "rain": {
+                "3h": 4.25
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-07-16 15:00:00"
+        },
+        {
+            "dt": 1752688800,
+            "main": {
+                "temp": 297.27,
+                "feels_like": 297.88,
+                "temp_min": 294.89,
+                "temp_max": 297.27,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 912,
+                "humidity": 82,
+                "temp_kf": 2.38
+            },
+            "weather": [
+                {
+                    "id": 501,
+                    "main": "Rain",
+                    "description": "moderate rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 95
+            },
+            "wind": {
+                "speed": 4.2,
+                "deg": 284,
+                "gust": 8.12
+            },
+            "visibility": 7712,
+            "pop": 1,
+            "rain": {
+                "3h": 5.1
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-07-16 18:00:00"
+        },
+        {
+            "dt": 1752699600,
+            "main": {
+                "temp": 295.41,
+                "feels_like": 295.88,
+                "temp_min": 293.88,
+                "temp_max": 295.41,
+                "pressure": 1007,
+                "sea_level": 1007,
+                "grnd_level": 910,
+                "humidity": 84,
+                "temp_kf": 1.53
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 92
+            },
+            "wind": {
+                "speed": 3.66,
+                "deg": 264,
+                "gust": 6.94
+            },
+            "visibility": 10000,
+            "pop": 1,
+            "rain": {
+                "3h": 1.85
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-07-16 21:00:00"
+        },
+        {
+            "dt": 1752710400,
+            "main": {
+                "temp": 293.38,
+                "feels_like": 293.76,
+                "temp_min": 293.38,
+                "temp_max": 293.38,
+                "pressure": 1007,
+                "sea_level": 1007,
+                "grnd_level": 911,
+                "humidity": 88,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 95
+            },
+            "wind": {
+                "speed": 4.38,
+                "deg": 244,
+                "gust": 7.07
+            },
+            "visibility": 10000,
+            "pop": 1,
+            "rain": {
+                "3h": 0.95
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-07-17 00:00:00"
+        }
+    ],
+    "city": {
+        "id": 1277333,
+        "name": "Bengaluru",
+        "coord": {
+            "lat": 12.9716,
+            "lon": 77.5946
+        },
+        "country": "IN",
+        "population": 5104047,
+        "timezone": 19800,
+        "sunrise": 1752625866,
+        "sunset": 1752671989
+    }
+}
